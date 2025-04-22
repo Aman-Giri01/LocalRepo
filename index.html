@@ -1,26 +1,604 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  
+
+
+  <!--========== Main style sheet ==========-->
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!--========== Remixicon ==========-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  <!--========== ScrollReveal JS ==========-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+  
 </head>
 <body>
-    <header class="section-navbar">
-        <nav class="navbar">
-            <ul>
-              <li class="nav-item">
-                <a href="/" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="projects.html" class="nav-link">Projects</a>
-              </li>
-    
-            </ul>
+
+  <!--========== To top button with scroll indicator bar ==========-->
+
+ <div class="to-top-btn">
+    <a href="#home"><span>To Top</span></a>
+    <div class="scroll-indicator-bar"></div>
+
+ </div>
+
+  <!--========== Header ==========-->
+    <header class="ms-header">
+        <div class="ms-container">
+            <div class="inner">
+                <div class="ms-logo">
+                    <a href="#"><span>Aman Giri</span></a>
+                </div>
+                <div class="header-btns">
+                    <div class="ms-main-btn border-btn lets-talk-btn">
+                        <a href="#contact">
+                            <span class="btn-text">Let's talk</span>
+                            <i class="ri-chat-1-fill chat-icon"></i> <!-- Chat icon -->
+                        </a>
+                    </div>
+                     
+                   <!-- <a href="#contact" class="lets-talk-icon"><i class="ri-chat-1-fill"></i></a> -->
+                   
+                </div>
+            </div>
+        </div>
     </header>
+  <!--========== Bottom navigation menu ==========-->
+   <div class="bottom-nav-container">
+    <div class="bottom-nav">
+        <div class="bottom-nav-inner">
+            <i class="ri-arrow-left-down-line menu-hide-btn"></i>
+            <ul class="menu">
+                <li class="menu-item"><a href="#home" class="current"><i class="ri-home-4-line"></i><span>Home</span></a></li>
+                <li class="menu-item"><a href="#about"><i class="ri-user-line"></i><span>About</span></a></li>
+                <li class="menu-item"><a href="#resume"><i class="ri-file-2-line"></i><span>Resume</span></a></li>
+                <li class="menu-item"><a href="#service"><i class="ri-service-line"></i><span>Service</span></a></li>
+                <li class="menu-item"><a href="#portfolio"><i class="ri-briefcase-line"></i><span>Portfolio</span></a></li>
+                <li class="menu-item"><a href="#contact"><i class="ri-chat-1-line"></i><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+   </div>
+   <div class="menu-show-btn">
+    <div class="bar-01"></div>
+    <div class="bar-02"></div>
+   </div>
+  <!--========== Home ==========-->
+  <section class="ms-section nav-menu-section" id="home">
+    <div class="ms-container home-container">
+        <div class="ms-wrapper">
+            <div class="home-social">
+                <span>Follow On</span>
+                <div class="social-line"></div>
+                <ul class="social-icons">
+                    <!-- <li><a href="https://www.behance.net/manusingh28"><i class="ri-insta-line"></i></a></li> -->
+                    <li><a href="https://linkedin.com/in/aman-giri-33ab3a304" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="avatar-container">
+            <div class="avatar-img">
+                <img src="./images/myPic.jpeg" alt="">
+            </div>
+            <div class="avatar-info">
+                <div class="text-content">
+                    <h4 class="hello-text">Hello, I'm</h4>
+                    <h1 class="my-name">Aman Giri</h1>
+                    <p class="what-i-do">A Web Developer</p>
+                    <div class="ms-main-btn fill-btn hire-btn-02">
+                        <a href="#">Explore<i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="home-scroll-btn">
+            <i class="ri-mouse-line mouse-icon"></i>
+            <div>Scroll Down</div>
+            <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </a>
+    </div>
+  </section>
+
+  <!--========== About Me ==========-->
+  <section class="ms-section nav-menu-section" id="about">
+    <div class="ms-container ms-sub-container">
+        <div class="ms-wrapper">
+            <div class="section-title about-title">
+                <h3>About Me</h3>
+                <p>What I do</p>
+            </div>
+            <div class="section-content">
+                <!-- <div class="about-img">
+                    <img src="./images/IMG_20250126_113530 (3).jpg" alt="">
+                    <img src="./images/myPic.jpeg" alt="">
+                </div> -->
+                <div class="about-details">
+                    <div class="about-info">
+                        <h4 class="iam">I'm a Web Developer</h4>
+                        <p class="about-discription">
+                            I specialize in building dynamic and user-friendly websites using Node.js, Express, HTML, CSS, and JavaScript. With a strong foundation in web development, I create responsive and efficient applications.
+                        </p> 
+                    </div>
+                    
+                    <!-- <div class="pro-list">
+                        <div class="pro-card">
+                            <span>02</span>
+                            <p>Years Of Experience</p>
+                        </div>
+                        <div class="pro-card">
+                            <span>10+</span>
+                            <p>Complete Projects</p>
+                        </div>
+                        <div class="pro-card">
+                            <span>01</span>
+                            <p>Internship</p>
+                        </div>
+                           
+                    </div> -->
+                    <div class="about-buttons" style="margin-top: 20px;">
+                        <div class="ms-main-btn fill-btn">
+                            <a href="#">Hire Me</a>
+                        </div>
+                        <div class="ms-main-btn download-btn">
+                            <a href="./images/" download>Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!--========== My Resume ==========-->
+  <div class="ms-section nav-menu-section" id="resume">
+    <div class="ms-container ms-sub-container">
+        <div class="ms-wrapper">
+            <!-- Section Title -->
+            <div class="section-title">
+                <h3>My Resume</h3>
+                <!-- <p>Combination Of Skills & Experience</p> -->
+            </div>
+
+            <!-- Resume Tabs -->
+            <div class="resume-tab">
+                <a class="tab-btn active" data-tab="education">
+                    <i class="ri-graduation-cap-line"></i>Education
+                </a>
+                <!-- <a class="tab-btn" data-tab="experience">
+                    <i class="ri-sparkling-line"></i>Experience
+                </a> -->
+                <a class="tab-btn" data-tab="skills">
+                    <i class="ri-user-settings-line"></i>Personal Skills
+                </a>
+            </div>
+
+            <div class="section-content">
+                <!-- Education Section -->
+                <div class="resume-tab-content education active">
+                    <div class="resume-line"></div>
+                    <div class="resume-items">
+                        <div class="items items-left">
+                            <div class="info">
+                                <i class="ri-graduation-cap-fill"></i>
+                                <div>
+                                    <h5>Matriculation</h5>
+                                    <p>Navjot Public School</p>
+                                    <span>2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items items-right">
+                            <div class="info">
+                                <i class="ri-graduation-cap-fill"></i>
+                                <div>
+                                    <h5>Higher Secondary Education</h5>
+                                    <p>S.S.S.S Khalsa Senior Secondary School</p>
+                                    <span>2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items items-left">
+                            <div class="info">
+                                <i class="ri-graduation-cap-fill"></i>
+                                <div>
+                                    <h5>BTech in Computer Science</h5>
+                                    <p>Amritsar Group Of Colleges</p>
+                                    <span>2022 - 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <!-- <div class="resume-tab-content experience">
+                    <div class="resume-line"></div>
+                    <div class="resume-items">
+                        <div class="items items-left">
+                            <div class="info">
+                                <i class="ri-briefcase-fill"></i>
+                                <div>
+                                    <h5>UI/UX Designer</h5>
+                                    <p>INA Internet Group</p>
+                                    <span>Dec 2024 - Jan 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items items-right">
+                            <div class="info">
+                                <i class="ri-briefcase-fill"></i>
+                                <div>
+                                    <h5>Web Developer</h5>
+                                    <p>Freelance</p>
+                                    <span>2023 - Present</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Skills Section -->
+                <div class="resume-tab-content skills active">
+                    <div class="skills-container">
+                
+                        <!-- Front-End Developer Skills -->
+                        <div class="skills-box">
+                            <h3><i class="ri-code-fill"></i> Front-End Development</h3>
+                            <ul>
+                                <li>HTML <span>Advanced</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 95%;"></div></div>
+                
+                                <li>CSS <span>Advanced</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 85%;"></div></div>
+                
+                                <li>JavaScript <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
+                                <!-- <li>React.js <span>Beginner</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 40%;"></div></div>
+                
+                                <li>Bootstrap <span>Advanced</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 90%;"></div></div>
+                
+                                <li>Tailwind CSS <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div> -->
+                            </ul>
+                        </div>
+                
+                        <!-- UI/UX Design Skills -->
+                        <!-- <div class="skills-box">
+                            <h3><i class="ri-pencil-ruler-line"></i> UI/UX Design</h3>
+                            <ul>
+                                <li>Figma <span>Advanced</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 90%;"></div></div>
+                
+                                <li>Wireframing <span>Advanced</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 85%;"></div></div>
+                
+                                <li>Prototyping <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
+                                <li>UI Design <span>Advanced</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 90%;"></div></div>
+                
+                                <li>UX Research <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
+                                <li>User Testing <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                            </ul>
+                        </div> -->
+                
+                        <!-- Programming & Backend Skills -->
+                        <div class="skills-box">
+                            <h3><i class="ri-terminal-box-line"></i> Programming & Backend</h3>
+                            <ul>
+                                <li>Node.js/Express <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
+                                <li>MongoDB <span>Beginner</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 60%;"></div></div>
+                
+                                <li>Sql <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
+                                <!-- <li>Data Structures & Algorithms <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div>
+                
+                                <li>Problem Solving <span>Intermediate</span></li>
+                                <div class="skill-progress"><div class="progress-bar" style="width: 75%;"></div></div> -->
+                
+                               
+                            </ul>
+                        </div>
+                
+                        
+                        
+                
+                    </div>
+                </div>
+                 
+            </div> 
+        </div> 
+    </div> 
+</div> 
+
+
+
+
+  <!--========== Services ==========-->
+  <div class="ms-section nav-menu-section" id="service">
+    <div class="ms-container ms-sub-container">
+        <div class="ms-wrapper">
+            <div class="section-title">
+                <h3>Services</h3>
+                <p>What I Provide</p>
+            </div>
+            <div class="section-content">
+                <div class="service-container">
+
+                    <!-- Frontend Development Card -->
+                    <div class="card-with-modal">
+                        <div class="service-card">
+                            <div class="service-info">
+                                <i class="ri-code-box-line service-icon"></i>
+                                <h4>Frontend Development</h4>
+                                <a class="service-see-more">See more <i class="ri-arrow-right-up-fill"></i></a>
+                            </div>
+                        </div>
+                        <div class="service-modal-backdrop">
+                            <div class="service-modal">
+                                <a class="modal-close-btn"><i class="ri-close-line"></i></a>
+                                <div class="modal-content">
+                                    <h3>Frontend Development</h3>
+                                    <p>I create visually appealing and responsive web interfaces using modern technologies.</p>
+                                    
+                                    <h4>Technologies I Use</h4>
+                                    <ul class="my-services">
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>HTML, CSS , JavaScript</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>React.js</p></li>
+                                        <!-- <li><i class="ri-checkbox-circle-fill"></i><p>Tailwind CSS, Bootstrap</p></li> -->
+                                    </ul>
+                    
+                                    <h4>My Experience</h4>
+                                    <ul class="my-services">
+                                        <!-- <li><i class="ri-checkbox-circle-fill"></i><p>2+ years of experience in frontend development</p></li> -->
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Developed interactive UIs</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Optimized website performance for better user experience</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- UI/UX Design Card -->
+                    <!-- <div class="card-with-modal">
+                        <div class="service-card">
+                            <div class="service-info">
+                                <i class="ri-palette-fill service-icon"></i>
+                                <h4>UI/UX Designing</h4>
+                                <a class="service-see-more">See more <i class="ri-arrow-right-up-fill"></i></a>
+                            </div>
+                        </div>
+                        <div class="service-modal-backdrop">
+                            <div class="service-modal">
+                                <a class="modal-close-btn"><i class="ri-close-line"></i></a>
+                                <div class="modal-content">
+                                    <h3>UI/UX Design</h3>
+                                    <p>I specialize in designing user-friendly and visually appealing interfaces for web and mobile applications. My focus is on enhancing user experience through research, wireframing, and modern design principles.</p>
+                                    <h4>What I Provide</h4>
+                                    <ul class="my-services">
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Wireframing & Prototyping (Figma)</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Responsive & Modern Web Design</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Design System & Style Guide Creation</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>User Interface (UI) & User Experience (UX) Design</p></li>
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Improving Website Usability & Navigation</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Backend Development Card -->
+                    <div class="card-with-modal">
+                        <div class="service-card">
+                            <div class="service-info">
+                                <i class="ri-database-2-line service-icon"></i>
+                                <h4>Backend Development</h4>
+                                <a class="service-see-more">See more <i class="ri-arrow-right-up-fill"></i></a>
+                            </div>
+                        </div>
+                        <div class="service-modal-backdrop">
+                            <div class="service-modal">
+                                <a class="modal-close-btn"><i class="ri-close-line"></i></a>
+                                <div class="modal-content">
+                                    <h3>Backend Development with MongoDB, MySql</h3>
+                                    <p>I build dynamic and scalable web applications using Node.js and Express.</p>
+                                    <h4>What I Provide</h4>
+                                    <ul class="my-services">
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Custom Web Applications</p></li>
+                                        <!-- <li><i class="ri-checkbox-circle-fill"></i><p>Database Management with Django ORM</p></li> -->
+                                        <li><i class="ri-checkbox-circle-fill"></i><p>Authentication & User Management</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!--========== Portfolio ==========-->
+  <section class="ms-section nav-menu-section" id="portfolio">
+    <div class="ms-container ms-sub-container">
+        <div class="ms-wrapper">
+            <div class="section-title">
+                <h3>Portfolio</h3>
+                <p>My Creative Works</p>
+            </div>
+            <!-- future use -->
+            <!-- <div class="portfolio-tabs">
+                <a class="tab-btn active" data-filter="all">All</a>
+                <a class="tab-btn" data-filter="web-design">Frontend Development</a>
+                <a class="tab-btn" data-filter="ui-design">UI/UX Design</a>
+                <a class="tab-btn" data-filter="graphic-design">Web Apps</a>
+            </div> -->
+
+            <div class="section-content">
+                <div class="portfolio-container"> 
+                </div>
+            </div>
+        </div>
+
+</section>
+
+
+ <!-- Template   -->
+ <template id="template">
+    <div class="card-with-modal ui-design">
+        <div class="portfolio-card">
+            <div class="card-img">
+                <img src="" alt="" class="ProjectImage">
+            </div>
+            <div class="card-info">
+                <h4 class="ProjectName"></h4>
+                <p class="desc about-discription"></p>
+                <a href="" target="_blank" class="card-link visit-link">
+                    <i class="ri-arrow-right-up-line card-btn"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>
+<!-- End Template -->
+
+
+
+
+
+  <!--========== Contact Me ==========-->
+
+
+  <section class="ms-section nav-menu-section" id="contact">
+    <div class="ms-container ms-sub-container">
+        <div class="ms-wrapper">
+            <div class="section-title">
+                <h3>Contact Me</h3>
+                <p>Get In Touch</p>
+            </div>
+            <div class="section-contact">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-details">
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-mail-send-fill"></i>
+                                </div>
+                                <div class="contact-method">
+                                    <span>E-mail</span>
+                                    <h4>amankumargiri2022@gmail.com</h4>
+                                    <a href="mailto:amankumargiri2022@gmail.com" target="_blank" title="Send an Email">
+                                        <span>Send <i class="ri-arrow-right-up-line"></i></span>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-whatsapp-fill"></i>
+                                </div>
+                                <div class="contact-method">
+                                    <span>WhatsApp</span>
+                                    <h4>+91 9501308797</h4>
+                                    <a href="https://wa.me/919501308797?text=Hello%20there!" target="_blank" title="Chat on WhatsApp">
+                                        <span>Send <i class="ri-arrow-right-up-line"></i></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3>Social Info</h3>
+                        <ul class="contact-social-links">
+                            <!-- <li><a href="https://x.com/msmanusingh07" target="_blank"><i class="ri-twitter-fill"></i></a></li> -->
+                            <li><a href="https://instagram.com" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+                            <li><a href="https://linkedin.com/in/aman-giri-33ab3a304" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Let's work <span>together.</span></h2>
+                        <p>Please fill out the form on this section to contact me, or call between 9:00 AM - 7:00 PM.</p>
+
+                        <form action="" method="post" id="ms-contact-form">
+                            <div class="input-group">
+                                <input type="text" name="full-name" placeholder="Name *" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" name="email" placeholder="Email *" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="subject" placeholder="Your Subject *" required>
+                            </div>
+                            <div class="input-group">
+                                <textarea name="message" placeholder="Your Message *" required></textarea>
+                            </div>
+                            <div class="input-group send-message">
+                                <button class="ms-main-btn fill-btn submit-btn" name="submit" type="submit">Send Message</button>
+                                <div class="contact-form-alert"><span>Your message was sent successfully</span><i class="ri-checkbox-circle-fill"></i></div>
+                            </div>
+                        </form>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</section>
+
+
+  <!--========== Footer ==========-->
+  <footer class="ms-footer">
+    <div class="ms-container">
+      <div class="inner">
+        <div class="ms-logo">
+          <a href="#home"><span>Aman Giri</span></a>
+        </div>
+        <ul class="footer-menu">
+          <li class="menu-item"><a href="#about">About</a></li>
+          <li class="menu-item"><a href="#resume">Resume</a></li>
+          <li class="menu-item"><a href="#service">Service</a></li>
+          <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+        </ul>
+        <p class="copy-right">© All rights reserved by <a href="">Aman Giri </a></p>
+      </div>
+    </div>
+  </footer>
+  
+
+
+  <!--========== EmailJS ==========-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!--========== Main javascript ==========-->
+ <script type="module" src="./src/main.js"></script>
+<script src="/script.js"></script>
+
+
 </body>
 </html>

@@ -1,0 +1,33 @@
+[
+    {
+        "name":"ShortiFy",
+        "image":"images/short.png",
+        "desc":"URL shortener application built with Node.js, Express, and MongoDB. This project allows users to generate shortened URLs that redirect to original links, similar to services like Bitly or TinyURL.",
+        "link":"https://url-shorterner-lop6.onrender.com"
+    },
+    {
+        "name":"MiniProjects",
+        "image":"images/mini.png",
+        "desc":"A curated collection of interactive web tools built with HTML, CSS, and JavaScript, including a language translator, GitHub profile viewer, gradient generator, BMI calculator, and currency converter with live flags and exchange rates",
+        "link":"https://agminiprojects.netlify.app/"
+    },
+    {
+        "name":"AG BookStore",
+        "image":"images/Book.png",
+        "desc":"AgBook Store is a fully JavaScript-based online bookstore that lets users explore, add to cart, purchase books, and manage their accounts with LocalStorage as the backend.",
+        "link":"https://agbookstore.netlify.app/"
+    },
+    {
+        "name":"EveryDay Eats",
+        "image":"images/everydayEats.png",
+        "desc":"Discover delicious recipes with easy step-by-step instructions. Search, cook, and enjoy the best meals from around the world!",
+        "link":"https://agrecipe.netlify.app/"
+    },
+    {
+        "name":"Language Tranlator",
+        "image":"images/lang.png",
+        "desc":"A simple and efficient Language Translator web app that allows users to translate text between multiple languages. It supports speech recognition, text-to-speech, and real-time translation using API.",
+        "link":"https://agtranslator.netlify.app/"
+    }
+
+]
