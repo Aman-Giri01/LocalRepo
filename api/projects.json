@@ -6,6 +6,18 @@
         "link":"https://url-shorterner-lop6.onrender.com"
     },
     {
+        "name":"AuthMate",
+        "image":"images/AuthMate.png",
+        "desc":"Authentication System: Built a secure user authentication flow with registration, login, JWT-based sessions, email verification, and password reset using hashed tokens.",
+        "link":"https://authentication-f2no.onrender.com/"
+    },
+    {
+        "name":"PokeCards",
+        "image":"images/Pokemon.png",
+        "desc":"A React web app that allows users to search for Pokémon by name and view their details, fetching data dynamically from a public Pokémon API.",
+        "link":"https://pokemoncat.netlify.app/"
+    },
+    {
         "name":"MiniProjects",
         "image":"images/mini.png",
         "desc":"A curated collection of interactive web tools built with HTML, CSS, and JavaScript, including a language translator, GitHub profile viewer, gradient generator, BMI calculator, and currency converter with live flags and exchange rates",
