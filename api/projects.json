@@ -1,12 +1,18 @@
 [
     {
+        "name":"Library Management System",
+        "image":"images/library.png",
+        "desc":"It is a modern web-based application that digitizes traditional library operations. Built with the MERN stack, it provides a comprehensive platform for managing books, users, and borrowing records efficiently.",
+        "link":"https://librarymngg.netlify.app/"
+    },
+    {
         "name":"ShortiFy",
         "image":"images/short.png",
         "desc":"URL shortener application built with Node.js, Express, and MongoDB. This project allows users to generate shortened URLs that redirect to original links, similar to services like Bitly or TinyURL.",
         "link":"https://url-shorterner-lop6.onrender.com"
     },
     {
-        "name":"AuthMate",
+        "name":"MyAuthApp",
         "image":"images/AuthMate.png",
         "desc":"Authentication System: Built a secure user authentication flow with registration, login, JWT-based sessions, email verification, and password reset using hashed tokens.",
         "link":"https://authentication-f2no.onrender.com/"
