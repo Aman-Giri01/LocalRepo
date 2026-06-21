@@ -1157,7 +1157,7 @@
       right: -2px;
   
    } 
-   about-img {
+   .about-img {
       width: 239px;
     }
     @media (max-width: 480px) {
