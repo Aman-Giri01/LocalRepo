@@ -5,6 +5,13 @@
    --sat: 85%;
    --light: 74%;
 
+   /*========= Pattern ========= */
+  --pattern-opacity: 0.08;
+  --pattern-color: 255, 255, 255;
+
+  /* ============ Glow ========== */
+  --glow-opacity: 0.12;
+
    /* ======= Primary Colors ======= */
    --primary-color: hsl(var(--hue), var(--sat), var(--light)); /* Primary */
    --white-color: hsl(var(--hue), 45%, 98%); /* White */
@@ -75,6 +82,13 @@
       --color-03: hsl(var(--hue), 35%, 95%); /* Off-white */
       --color-04: hsl(var(--hue), 10%, 50%); /* Grayish */
       --body-color: hsl(var(--hue), 25%, 90%); /* Softer background */
+
+      /* Pattern */
+      --pattern-opacity: 0.05;
+      --pattern-color: 0, 0, 0;
+
+      /* Glow */
+      --glow-opacity: 0.08;
   
       /* Background Colors */
       --bottom-nav-bg: hsl(var(--hue), 20%, 30%, 0.8); /* Semi-transparent dark */
@@ -2174,4 +2188,88 @@
 .chat-icon:hover {
     transform: scale(1.1);
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+/*  */
+.section-pattern{
+    position: relative;
+    isolation: isolate;
+}
+
+.section-pattern::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-2;
+    pointer-events:none;
+
+    mask-image: radial-gradient(
+    ellipse 120% 90% at 50% 30%,
+    #000 65%,
+    transparent 100%
+);
+}
+
+.pattern-grid::before{
+    background-image:
+        linear-gradient(
+            rgba(var(--pattern-color), var(--pattern-opacity)) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(var(--pattern-color), var(--pattern-opacity)) 1px,
+            transparent 1px
+        );
+
+    background-size:32px 32px;
+}
+
+/* .pattern-dots::before{
+    background-image:
+        radial-gradient(
+             rgba(var(--pattern-color), var(--pattern-opacity)) 1.5px,
+            transparent 1.5px
+        );
+
+    background-size:28px 28px;
+} */
+
+.pattern-dots::before{
+    background-image:
+        radial-gradient(
+            rgba(var(--pattern-color), calc(var(--pattern-opacity) * 1)) 2px,
+            transparent 2px
+        );
+
+    background-size:24px 24px;
+}
+
+.pattern-hex::before{
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            transparent 10px,
+            rgba(var(--pattern-color), var(--pattern-opacity)) 10px 11px,
+            transparent 11px
+        );
+
+    background-size:40px 34px;
+}
+.pattern-glow::after{
+
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(92,145,255,var(--glow-opacity)),
+            transparent 80%
+        );
 }
