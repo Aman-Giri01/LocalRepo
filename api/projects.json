@@ -1,77 +1,195 @@
 [
     {
-        "name":"QuickDrop",
-        "image":"images/qd.png",
-        "desc":"A MERN-based grocery delivery app with real-time tracking, AI recipe suggestions, smart pantry management, and secure PayPal and Stripe payments.",
-        "link":"https://qd-f.onrender.com/",
-        "category":"full-stack"
+        "id": "quickdrop",
+        "name": "QuickDrop",
+        "image": "images/qd.png",
+        "desc": "A MERN-based grocery delivery app with real-time tracking, AI recipe suggestions, smart pantry management, and secure PayPal and Stripe payments.",
+        "link": "https://qd-f.onrender.com/",
+        "category": "full-stack",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Grocery shopping and delivery often lack real-time visibility and smart planning. QuickDrop lets users order groceries, track delivery live, get AI-powered recipe ideas from what's in their pantry, and pay securely online.",
+        "features": [
+            { "icon": "ri-map-pin-time-line", "text": "Real-time order tracking from checkout to delivery" },
+            { "icon": "ri-sparkling-2-line", "text": "AI-powered recipe suggestions based on pantry items" },
+            { "icon": "ri-archive-2-line", "text": "Smart pantry management to reduce food waste" },
+            { "icon": "ri-bank-card-line", "text": "Secure checkout with PayPal & Stripe" }
+        ],
+        "techStack": ["React", "Node.js", "Express", "MongoDB", "Stripe", "PayPal", "Tailwind CSS"]
     },
     {
-        "name":"BookZone",
-        "image":"images/library.png",
-        "desc":"A MERN-powered library management system for handling books, users, and borrowing records with an efficient digital workflow.",
-        "link":"https://librarymngg.netlify.app/",
-        "category":"full-stack"
+        "id": "bookzone",
+        "name": "BookZone",
+        "image": "images/library.png",
+        "desc": "A MERN-powered library management system for handling books, users, and borrowing records with an efficient digital workflow.",
+        "link": "https://librarymngg.netlify.app/",
+        "category": "full-stack",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Manual library record-keeping is slow and error-prone. BookZone digitises the entire workflow, letting staff manage the book catalogue, members, and borrow/return records from one dashboard.",
+        "features": [
+            { "icon": "ri-book-2-line", "text": "Full book catalogue with search & filters" },
+            { "icon": "ri-team-line", "text": "Member management with borrowing history" },
+            { "icon": "ri-repeat-line", "text": "Borrow & return workflow with due-date tracking" },
+            { "icon": "ri-shield-user-line", "text": "Role-based access for staff and members" }
+        ],
+        "techStack": ["React", "Node.js", "Express", "MongoDB"]
     },
     {
-        "name":"EliteMart",
-        "image":"images/elite.png",
-        "desc":"A modern e-commerce platform offering product browsing, secure shopping, great deals, and a smooth user experience.",
-        "link":"https://elitemartt.netlify.app/",
-        "category":"full-stack"
+        "id": "elitemart",
+        "name": "EliteMart",
+        "image": "images/elite.png",
+        "desc": "A modern e-commerce platform offering product browsing, secure shopping, great deals, and a smooth user experience.",
+        "link": "https://elitemartt.netlify.app/",
+        "category": "full-stack",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Small online stores need a fast, modern shopping experience without heavy overhead. EliteMart provides product browsing, cart management, and a smooth checkout flow with a clean, responsive UI.",
+        "features": [
+            { "icon": "ri-store-2-line", "text": "Product catalogue with categories & search" },
+            { "icon": "ri-shopping-cart-2-line", "text": "Cart & checkout flow" },
+            { "icon": "ri-price-tag-3-line", "text": "Deals & discount highlights" },
+            { "icon": "ri-smartphone-line", "text": "Fully responsive on every device" }
+        ],
+        "techStack": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]
     },
     {
-        "name":"ShortiFy",
-        "image":"images/short.png",
-        "desc":"A URL shortener built with Node.js, Express, and MongoDB that generates compact links and redirects users seamlessly.",
-        "link":"https://url-shorterner-lop6.onrender.com"
+        "id": "shortify",
+        "name": "ShortiFy",
+        "image": "images/short.png",
+        "desc": "A URL shortener built with Node.js, Express, and MongoDB that generates compact links and redirects users seamlessly.",
+        "link": "https://url-shorterner-lop6.onrender.com",
+        "category": "backend",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Long, messy URLs are hard to share and track. ShortiFy generates short, unique links that redirect instantly, making links easier to share and manage.",
+        "features": [
+            { "icon": "ri-link", "text": "Generate short links in one click" },
+            { "icon": "ri-arrow-right-up-line", "text": "Fast, seamless redirection" },
+            { "icon": "ri-database-2-line", "text": "Persistent storage with MongoDB" }
+        ],
+        "techStack": ["Node.js", "Express", "MongoDB"]
     },
     {
-        "name":"MyAuthApp",
-        "image":"images/AuthMate.png",
-        "desc":"A secure authentication system featuring registration, JWT sessions, email verification, and password reset support.",
-        "link":"https://authentication-f2no.onrender.com/"
+        "id": "myauthapp",
+        "name": "MyAuthApp",
+        "image": "images/AuthMate.png",
+        "desc": "A secure authentication system featuring registration, JWT sessions, email verification, and password reset support.",
+        "link": "https://authentication-f2no.onrender.com/",
+        "category": "backend",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Building secure auth from scratch is a common but error-prone requirement. MyAuthApp implements a complete, reusable authentication flow with verified sessions and safe password recovery.",
+        "features": [
+            { "icon": "ri-user-add-line", "text": "Registration & login with JWT sessions" },
+            { "icon": "ri-mail-check-line", "text": "Email verification flow" },
+            { "icon": "ri-lock-password-line", "text": "Secure password reset" },
+            { "icon": "ri-shield-check-line", "text": "Protected routes & session handling" }
+        ],
+        "techStack": ["Node.js", "Express", "MongoDB", "JWT"]
     },
     {
-        "name":"PokeCards",
-        "image":"images/Pokemon.png",
-        "desc":"A React app that fetches Pokémon data from a public API, allowing users to search and explore detailed information.",
-        "link":"https://pokemoncat.netlify.app/",
-        "category":"frontend"
+        "id": "pokecards",
+        "name": "PokeCards",
+        "image": "images/Pokemon.png",
+        "desc": "A React app that fetches Pokémon data from a public API, allowing users to search and explore detailed information.",
+        "link": "https://pokemoncat.netlify.app/",
+        "category": "frontend",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Pokémon fans want a quick, visual way to look up stats and details. PokeCards fetches live data from a public API and presents it in searchable, easy-to-browse cards.",
+        "features": [
+            { "icon": "ri-search-line", "text": "Search & explore Pokémon instantly" },
+            { "icon": "ri-cloud-line", "text": "Live data from a public REST API" },
+            { "icon": "ri-layout-grid-line", "text": "Clean, card-based browsing experience" }
+        ],
+        "techStack": ["React", "REST API", "CSS3"]
     },
     {
-        "name":"MiniProjects",
-        "image":"images/mini.png",
-        "desc":"A collection of interactive web tools including a translator, GitHub viewer, gradient generator, BMI, and currency converter.",
-        "link":"https://agminiprojects.netlify.app/",
-        "category":"frontend"
+        "id": "miniprojects",
+        "name": "MiniProjects",
+        "image": "images/mini.png",
+        "desc": "A collection of interactive web tools including a translator, GitHub viewer, gradient generator, BMI, and currency converter.",
+        "link": "https://agminiprojects.netlify.app/",
+        "category": "frontend",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Small everyday utilities are often scattered across different sites. MiniProjects bundles several handy tools into one place, built purely with core JavaScript.",
+        "features": [
+            { "icon": "ri-translate-2", "text": "Language translator tool" },
+            { "icon": "ri-github-line", "text": "GitHub profile viewer" },
+            { "icon": "ri-palette-line", "text": "CSS gradient generator" },
+            { "icon": "ri-calculator-line", "text": "BMI & currency converter" }
+        ],
+        "techStack": ["HTML", "CSS", "JavaScript"]
     },
     {
-        "name":"AG BookStore",
-        "image":"images/Book.png",
-        "desc":"A JavaScript-based online bookstore with cart management, purchases, and account handling powered by LocalStorage.",
-        "link":"https://agbookstore.netlify.app/",
-        "category":"frontend"
+        "id": "ag-bookstore",
+        "name": "AG BookStore",
+        "image": "images/Book.png",
+        "desc": "A JavaScript-based online bookstore with cart management, purchases, and account handling powered by LocalStorage.",
+        "link": "https://agbookstore.netlify.app/",
+        "category": "frontend",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "AG BookStore simulates a full online bookshop experience — browsing, cart management, and simple account handling — entirely on the client side using LocalStorage.",
+        "features": [
+            { "icon": "ri-book-open-line", "text": "Browse a catalogue of books" },
+            { "icon": "ri-shopping-cart-2-line", "text": "Cart & purchase simulation" },
+            { "icon": "ri-user-line", "text": "Basic account handling" },
+            { "icon": "ri-save-line", "text": "Data persisted with LocalStorage" }
+        ],
+        "techStack": ["HTML", "CSS", "JavaScript"]
     },
     {
-        "name":"EveryDay Eats",
-        "image":"images/everydayEats.png",
-        "desc":"A recipe discovery app with step-by-step instructions, search functionality, and meals from cuisines around the world.",
-        "link":"https://agrecipe.netlify.app/",
-        "category":"frontend"
+        "id": "everyday-eats",
+        "name": "EveryDay Eats",
+        "image": "images/everydayEats.png",
+        "desc": "A recipe discovery app with step-by-step instructions, search functionality, and meals from cuisines around the world.",
+        "link": "https://agrecipe.netlify.app/",
+        "category": "frontend",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Deciding what to cook can be time-consuming. EveryDay Eats lets users search global recipes and follow clear, step-by-step cooking instructions.",
+        "features": [
+            { "icon": "ri-search-line", "text": "Search recipes by name or cuisine" },
+            { "icon": "ri-list-check-2", "text": "Step-by-step cooking instructions" },
+            { "icon": "ri-earth-line", "text": "Meals from cuisines around the world" }
+        ],
+        "techStack": ["HTML", "CSS", "JavaScript", "REST API"]
     },
     {
-        "name":"Language Tranlator",
-        "image":"images/lang.png",
-        "desc":"A multilingual translator with real-time translation, speech recognition, and text-to-speech powered by APIs.",
-        "link":"https://agtranslator.netlify.app/",
-        "category":"frontend"
+        "id": "language-translator",
+        "name": "Language Tranlator",
+        "image": "images/lang.png",
+        "desc": "A multilingual translator with real-time translation, speech recognition, and text-to-speech powered by APIs.",
+        "link": "https://agtranslator.netlify.app/",
+        "category": "frontend",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Communicating across languages needs more than plain text translation. This tool adds real-time translation with speech recognition and text-to-speech for a more natural experience.",
+        "features": [
+            { "icon": "ri-translate", "text": "Real-time multilingual translation" },
+            { "icon": "ri-mic-line", "text": "Speech recognition input" },
+            { "icon": "ri-volume-up-line", "text": "Text-to-speech output" }
+        ],
+        "techStack": ["HTML", "CSS", "JavaScript", "Web Speech API"]
     },
     {
-        "name":"FoodHub",
-        "image":"images/foodhub.png",
-        "desc":"A modern restaurant management interface designed to deliver a smooth, responsive, and user-friendly experience.",
-        "link":"https://agfoodhub.netlify.app/",
-        "category":"frontend"
+        "id": "foodhub",
+        "name": "FoodHub",
+        "image": "images/foodhub.png",
+        "desc": "A modern restaurant management interface designed to deliver a smooth, responsive, and user-friendly experience.",
+        "link": "https://agfoodhub.netlify.app/",
+        "category": "frontend",
+        "tag": "Personal Project",
+        "live": true,
+        "problem": "Restaurant-facing interfaces are often clunky. FoodHub focuses on a clean, responsive UI for browsing menus and managing orders with a smooth user experience.",
+        "features": [
+            { "icon": "ri-restaurant-line", "text": "Menu browsing with categories" },
+            { "icon": "ri-layout-4-line", "text": "Clean, modern restaurant UI" },
+            { "icon": "ri-smartphone-line", "text": "Fully responsive design" }
+        ],
+        "techStack": ["HTML", "CSS", "JavaScript"]
     }
 ]

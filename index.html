@@ -128,6 +128,10 @@
         <div class="avatar-container">
             <div class="avatar-img">
                 <img src="./images/myPic.jpeg" alt="">
+                <div class="profile-views-badge" id="profile-views-badge">
+                    <i class="ri-eye-line"></i>
+                    <span id="profile-views-count">--</span>
+                </div>
             </div>
             <div class="avatar-info">
                 <div class="text-content">
@@ -512,20 +516,80 @@
  <template id="template">
     <div class="card-with-modal ui-design">
         <div class="portfolio-card">
+            <div class="card-top-tag">
+                <span class="dot"></span>
+                <span class="ProjectTag">Personal Project</span>
+            </div>
             <div class="card-img">
                 <img src="" alt="" class="ProjectImage">
+                <span class="card-status-badge"><span class="dot"></span><span class="StatusText">Live</span></span>
             </div>
             <div class="card-info">
-                <h4 class="ProjectName"></h4>
+                <div class="card-info-top">
+                    <h4 class="ProjectName"></h4>
+                    <span class="card-views"><i class="ri-eye-line"></i><span class="ViewCount">0</span></span>
+                </div>
                 <p class="desc about-discription"></p>
-                <a href="" target="_blank" class="card-link visit-link">
-                    <i class="ri-arrow-right-up-line card-btn"></i>
-                </a>
+                <div class="card-footer">
+                    <button type="button" class="like-btn" aria-label="Like this project">
+                        <i class="ri-heart-3-line like-icon"></i>
+                        <span class="LikeCount">0</span>
+                    </button>
+                    <div class="card-footer-links">
+                        <a href="https://linkedin.com/in/aman-giri-33ab3a304" target="_blank" class="footer-icon-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer-icon-link visit-link" title="Visit live project" aria-label="Visit live project">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                        <button type="button" class="details-btn">
+                            <i class="ri-eye-2-line"></i> Details
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </template>
 <!-- End Template -->
+
+<!-- Project Details Modal Template -->
+<template id="project-modal-template">
+    <div class="service-modal-backdrop project-modal-backdrop">
+        <div class="service-modal project-modal">
+            <a class="modal-close-btn"><i class="ri-close-line"></i></a>
+            <div class="modal-content project-modal-content">
+                <div class="project-modal-header">
+                    <span class="ProjectTag"></span>
+                    <span class="card-status-badge"><span class="dot"></span><span class="StatusText">Live</span></span>
+                </div>
+                <img src="" alt="" class="ProjectImage project-modal-img">
+                <h3 class="ProjectName"></h3>
+                <p class="desc about-discription"></p>
+
+                <div class="project-feature-grid FeatureGrid"></div>
+
+                <div class="project-problem-box ProblemBox">
+                    <h4><i class="ri-lightbulb-flash-line"></i> Problem It Solves</h4>
+                    <p class="ProblemText"></p>
+                </div>
+
+                <h4 class="tech-stack-title"><i class="ri-tools-line"></i> Tech Stack</h4>
+                <div class="tech-stack-tags TechStackTags"></div>
+
+                <div class="project-modal-stats">
+                    <span><i class="ri-eye-line"></i> <span class="ModalViewCount">0</span> views</span>
+                    <span><i class="ri-heart-3-fill"></i> <span class="ModalLikeCount">0</span> likes</span>
+                </div>
+
+                <div class="project-modal-actions">
+                    <a href="" target="_blank" class="ms-main-btn fill-btn visit-link"><i class="ri-rocket-2-line"></i> Live Preview</a>
+                    <a href="https://linkedin.com/in/aman-giri-33ab3a304" target="_blank" class="ms-main-btn border-btn"><i class="ri-linkedin-fill"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
 
 
 
@@ -599,7 +663,7 @@
                                 <textarea name="message" placeholder="Your Message *" required></textarea>
                             </div>
                             <div class="input-group send-message">
-                                <button class="ms-main-btn fill-btn submit-btn" name="submit" type="submit">Send Message</button>
+                                <button class="ms-main-btn fill-btn submit-btn" type="submit">Send Message</button>
                                 <div class="contact-form-alert"><span>Your message was sent successfully</span><i class="ri-checkbox-circle-fill"></i></div>
                             </div>
                         </form>

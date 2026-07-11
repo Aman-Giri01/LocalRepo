@@ -32,7 +32,7 @@ document.querySelector('.tab-btn.active').click();
 //---==service modal open/close function ===---//
 
 document.addEventListener("DOMContentLoaded", () => {
-    const serviceCards = document.querySelectorAll(".card-with-modal");
+    const serviceCards = document.querySelectorAll(".service-container .card-with-modal");
 
     serviceCards.forEach((card) => {
         const seeMoreBtn = card.querySelector(".service-see-more");
@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const portfolioTabs = document.querySelector(".portfolio-tabs");
+    if (!portfolioTabs) return; // portfolio-tabs markup is currently disabled
+
     const portfolioTabBtns = portfolioTabs.querySelectorAll(".tab-btn");
     const cardsWithModals = document.querySelectorAll(".portfolio-container .card-with-modal");
 
@@ -106,18 +108,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // email js
 
-(function () {
+if (typeof emailjs !== "undefined") {
     // Initialize EmailJS
     emailjs.init({
         publicKey: "yHGQFq-wV0x3h29Hd",
     });
-})();
+} else {
+    // The EmailJS CDN script didn't load (network issue, ad-blocker, etc.)
+    // Log it clearly instead of letting it silently break the rest of this file.
+    console.error("EmailJS library did not load - the contact form will not be able to send until this is fixed. Check that https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js is reachable (not blocked by an ad-blocker/extension or network).");
+}
 
 const msContactForm = document.getElementById("ms-contact-form");
 const msContactFormAlert = document.querySelector(".contact-form-alert");
 
 msContactForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
+    if (typeof emailjs === "undefined") {
+        console.error("EmailJS library is not available, cannot send the message.");
+        msContactFormAlert.innerHTML = "<span>Message not sent</span> <i class='ri-error-warning-fill'></i>";
+        msContactFormAlert.style.color = "red";
+        msContactFormAlert.style.display = "flex";
+        return;
+    }
+
+    const submitBtn = msContactForm.querySelector(".submit-btn");
+    const originalBtnText = submitBtn ? submitBtn.textContent : "";
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+    }
 
     emailjs.sendForm("service_3ytv2il", "template_gnnd9wh", msContactForm)
         .then(() => {
@@ -132,10 +153,20 @@ msContactForm.addEventListener("submit", function (event) {
                 msContactFormAlert.style.display = "none";
             }, 5000);
         }, (error) => {
+            // Log the real reason to the console so it's easy to diagnose
+            // (open DevTools > Console after clicking Send to see this)
+            console.error("EmailJS failed to send:", error);
+
             // Show error message if sending fails
             msContactFormAlert.innerHTML = "<span>Message not sent</span> <i class='ri-error-warning-fill'></i>";
             msContactFormAlert.style.color = "red";
             msContactFormAlert.style.display = "flex";
+        })
+        .finally(() => {
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+            }
         });
 });
 
@@ -332,4 +363,3 @@ document.addEventListener("touchstart", (e) => {
   
     setTimeout(() => ripple.remove(), 500);
   });
-  
